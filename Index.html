@@ -3,19 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello World</title>
+    <title>Walters Perfect Paint</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        section {
+            padding: 20px;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .gallery img {
+            width: 30%;
+            height: auto;
+            border: 2px solid #ddd;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .calendar {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .calendar input[type="date"] {
+            padding: 10px;
+            margin-top: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .calendar button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .calendar button:hover {
+            background-color: #45a049;
+        }
+    </style>
 </head>
 <body>
-    <h1>Hello, World!</h1>
-    <h1>Hello, World!</h1>
-    <h1>Hello, World!</h1>
-    <h1>Hello, World!</h1>
-    <h1>Hello, World!</h1>
-    <h1>Hello, World!</h1>
-    <h1>Hello, World!</h1>
-    <h1>Hello, World!</h1>
-    <h1>Hello, World!</h1>
-    <h1>Hello, World!</h1>
+    <header>
+        <h1>Walters Perfect Paint</h1>
+        <p>Your trusted painting professionals</p>
+    </header>
+    <nav>
+        <a href="#about">About Us</a>
+        <a href="#gallery">Our Work</a>
+        <a href="#calendar">Book Us</a>
+    </nav>
+    <section id="about">
+        <h2>About Us</h2>
+        <p>At Walters Perfect Paint, we provide top-notch painting services for homes and businesses. With years of experience and a passion for excellence, we bring your vision to life.</p>
+    </section>
+    <section id="gallery">
+        <h2>Our Work</h2>
+        <div class="gallery">
+            <img src="https://via.placeholder.com/300x200" alt="Painting Example 1">
+            <img src="https://via.placeholder.com/300x200" alt="Painting Example 2">
+            <img src="https://via.placeholder.com/300x200" alt="Painting Example 3">
+        </div>
+    </section>
+    <section id="calendar">
+        <h2>Book a Painting Service</h2>
+        <div class="calendar">
+            <label for="date">Select a date:</label>
+            <input type="date" id="date" name="date">
+            <button onclick="alert('Booking confirmed!')">Book Now</button>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2025 Walters Perfect Paint. All rights reserved.</p>
+    </footer>
 </body>
 </html>
- 
